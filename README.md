@@ -70,11 +70,26 @@ Why the difference matters
 
 
 ## Data sources and AI methods
+Yahoo Finance (yfinance): The most popular free source for historical and real-time stock prices.
 
+Alpha Vantage / Polygon.io: Professional-grade APIs used for high-frequency trading data.
+
+FRED (Federal Reserve Economic Data): Used for "Multiplicative" macro-data like inflation rates and GDP growth.
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+Challenge: Real-World Population AI (Conceptual)
+
+  Imagine you are building an AI to predict the spread of a new social media app. 
+  
+  You have two data points:
+  Day 1: 1,000 users
+  Day 2: 2,000 users
+  Day 3: 4,000 users
+  The Question:
+  If you use Standard Calculus, the "velocity" (derivative) is increasing ($+1000$, then $+2000$). The AI thinks the growth is accelerating.
+  If you use Multiplicative Calculus, what is the value of the multiplicative derivative ($f^*$) for this sequence?
+  The Insight: Why does the Multiplicative AI see this as a "steady/constant" state while the Standard AI sees it as "explosive"?
 
 ## What next?
 
@@ -82,9 +97,29 @@ What does your project _not_ solve? Which limitations and ethical considerations
 2- "Learning Compositional Functions via Multiplicative Weight Updates" – Discusses why standard gradients fail for deep, complex hierarchies and how multiplicative math fixes it.
 3- "Consensus Multiplicative Weights Update" – A very recent look at how AI agents can reach "Nash Equilibrium" faster in multi-player games using this calculus.
 ## Acknowledgments
+I would like to extend my gratitude to the following conceptual pillars and contributors that made this exploration of Multiplicative Calculus and Artificial Intelligence possible:
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+1-The Mathematical Pioneers
+
+To Michael Grossman and Robert Katz, who in the 1970s formalized the "Non-Newtonian Calculus." Their vision to move beyond the additive limitations of $f(x+h) - f(x)$ provided the toolkit necessary to describe growth, biology, and finance in their most natural, geometric states.
+
+2-The AI Research Community
+
+To the researchers in Information Geometry and Hyperbolic Deep Learning. Their work in moving Neural Networks away from flat Euclidean planes and toward curved, multiplicative manifolds has opened new doors for how machines understand hierarchy and complex relationships in data.
+
+3- The Algorithmic Frameworks
+
+Special thanks to the developers of the Exponentiated Gradient and Multiplicative Weights Update (MWU) algorithms. These frameworks prove daily that in high-stakes environments—from stock market rebalancing to online ad bidding—multiplicative logic offers a level of stability and "no-regret" performance that standard additive methods cannot match.
+
+4-Technical Foundations
+
+Gratitude is owed to the creators of the Log-Space Transformation techniques. By bridging the gap between multiplicative theory and additive hardware (GPUs), they have made it computationally feasible to train deep, stable models that handle exponential data without numerical collapse.
+
+Final Reflection
+
+"If the only tool you have is a hammer, everything looks like a nail. If your only calculus is additive, every growth looks like a slope. Multiplicative calculus gives us the lens to see the curve."
+
+
+
+
+
